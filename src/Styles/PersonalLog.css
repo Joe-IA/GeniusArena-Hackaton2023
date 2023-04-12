@@ -1,0 +1,55 @@
+.personalLog{
+    position: absolute;
+    left: 225px;
+    width: 84.5%;
+}
+
+.barra{
+    list-style-type: none;
+}
+
+.elemento{
+    position: absolute;
+    height: 28px;
+    left: 89px;
+    top: 46px;
+    
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    color: #404444;
+}
+
+.bellIcon-contenedor{
+    position: absolute;
+    top: 46px;
+    left: 1000px;
+}
+
+.bellIcon{
+    height: 30px;
+    width: 30px;
+}
+
+.redBall{
+    margin-bottom: 19px;
+    margin-left: -13px;
+    color: #e14949;
+    height: 12px;
+    width: 12px;
+}
+
+.fotoElemento{
+    position: absolute;
+    top: 30px;
+    left: 1080px;
+    height: 60px;
+    width: 60px;
+}
+
+.foto{
+    height: 60px;
+    width: 60px
+}

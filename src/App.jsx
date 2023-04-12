@@ -1,9 +1,13 @@
 import './App.css';
-import { Graph } from './Components/Graph'
+import  {MainPage}  from './Pages/MainPage';
+import { Login } from'./Pages/Login';
+import { MyRoutes } from './Routes/MyRoutes';
 
 export function App() {
+
     return(
-    <Graph/>
+        <MyRoutes />
+
     )
 }
 
