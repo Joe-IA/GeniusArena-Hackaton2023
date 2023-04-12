@@ -4,9 +4,13 @@ import "../Styles/Login.css"
 import Astrazeneca from "../Images/astrazeneca-logo-0.png";
 import LoginImg from "../Images/image 5.png";
 import Fondo from "../Images/Fondo.png";
+import {useNavigate} from "react-router-dom";
 import axios from "axios";
 
+
 export function Login(){
+    const nav = useNavigate();
+    const API_URL = "https://0081-177-231-135-134.ngrok-free.app/api/user/login";
     
         const [placeholderMail, setPlaceholderMail] = useState("Email");
         const handleFocusMail = () => {
@@ -29,20 +33,25 @@ export function Login(){
         const [email, setEmail] = useState("");
         const [contrasena, setContrasena] = useState("");
 
-        const handleUsuario = (e) => {
+        const handleEmail = (e) => {
             setEmail(e.target.value);
+            console.log(email)
         }
         
         const handleContrasena = (e) => {
             setContrasena(e.target.value);
+            console.log(contrasena)
         }
 
-        const handleLog = () => {
-            axios.post("https://3dd2-177-231-135-134.ngrok-free.app/api/user/login", {email, contrasena})
-            .then((response) => {
-                const usuarios = response.data.usuarios;
-                const usuarioValido = usuarios.find(u => u.email === email && u.password === contrasena);
+        const handleLog = async () => {
+            axios.post(API_URL, {"email": email, "password": contrasena})
+            .then(() => {
+                nav('/');
             })
+            .catch(() => {
+                document.getElementById("email").value = "";
+                document.getElementById("password").value = "";
+              });
         }
 
     return(
@@ -53,15 +62,15 @@ export function Login(){
             <h3>Login to our service status application</h3>
             <div className="input mail">
             <BiUser className="icono"/>
-            <input type="email" name="email" autoComplete="off" id="email" className="in" placeholder={placeholderMail} onFocus={handleFocusMail} onBlur={handleBlurMail} />
+            <input type="email" name="email" autoComplete="off" id="email" className="in" placeholder={placeholderMail} onFocus={handleFocusMail} onBlur={handleBlurMail} onChange={handleEmail}/>
             </div>
             <div className="input password">
             <BiLockAlt className="icono"/>
-            <input type="password" name="password" autoComplete="off" id="password"  className="in" placeholder={placeholderPass} onFocus={handleFocusPass} onBlur={handleBlurPass}/>
+            <input type="password" name="password" autoComplete="off" id="password"  className="in" placeholder={placeholderPass} onFocus={handleFocusPass} onBlur={handleBlurPass} onChange={handleContrasena}/>
             </div>
             <button className="button" onClick={handleLog}>Login</button>
             <p> Forgot password?</p>
-            <img src={LoginImg} alt="Chava" className="loginImg" />
+            <img src={LoginImg} alt="Chava" className="loginImg"/>
         </div>
     );
 }

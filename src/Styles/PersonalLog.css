@@ -2,6 +2,7 @@
     position: absolute;
     left: 225px;
     width: 84.5%;
+    border: solid 0.5px rgba(0,0,0,0.2);
 }
 
 .barra{
