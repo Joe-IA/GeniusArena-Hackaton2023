@@ -7,6 +7,9 @@
     background-color: #78174F;
     border-radius: 26px;
 }
+a{
+    text-decoration: none;
+}
 
 .menu{
     margin-left: 76px;
@@ -85,4 +88,4 @@
     background-color: white; 
     width: 190px
 }
-    
+

@@ -1,5 +1,4 @@
-
-h2{
+.greater{
 position: absolute;
 width: 307px;
 height: 85px;
@@ -14,7 +13,7 @@ line-height: 85px;
 color: #404444;
 }
 
-h3{
+.great{
 position: absolute;
 width: 293px;
 height: 78px;

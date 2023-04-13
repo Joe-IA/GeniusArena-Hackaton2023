@@ -1,0 +1,18 @@
+.SettingContainer{
+    position: absolute;
+    margin-top: 107px;
+    margin-left: 225px;
+    height: 84%;
+    width: 84.5%;
+    border-top: solid 2px rgba(0,0,0,.2);
+}
+
+.elementsContainer{
+    margin-top: 90px;
+    margin-left: 130px;
+    width:700px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}

@@ -1,0 +1,90 @@
+.Historial{
+    box-shadow: 0px 0px 2.94141px rgba(0, 0, 0, 0.25);
+    border-radius: 20.5898px;
+    width: 900px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.month{
+font-style: normal;
+font-weight: 400;
+font-size: 28.7746px;
+line-height: 33px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.monthC{
+    padding-bottom: 10px;
+    border-bottom: 0.735352px solid #CFCDCD;;
+    margin-left: 20px;
+}
+
+.period{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.5px;
+    line-height: 22px;
+    margin: 0 30px 0 30px;
+
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    margin: 15px 0 17px 20px;
+    
+}
+
+.April, .March, .February{
+    margin: 20px 0px 20px 80px;
+    border-left: 3px solid #CFCDCD;
+}
+
+.orange, .red, .yellow{
+    font-weight: 700;
+    font-size: 22.0658px;
+    line-height: 25px;
+
+}
+
+.orange{
+    color: #F16A1E;
+}
+
+.red{
+    color: #FF0000;
+    
+}
+.yellow{
+    color: #A4861D; 
+}
+
+.incident{
+    margin-bottom: 20px;
+    border-bottom: 0.735352px solid #CFCDCD;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-top: -70px;
+}
+
+.info{
+    font-style: normal;
+font-weight: 400;
+font-size: 16.1777px;
+line-height: 19px;
+color: #616161;
+}
+
+.incidentIcon{
+    width: 50px;
+    height: 50px;
+    margin-left:-56px ;
+    margin-top: 50px;
+}

@@ -58,8 +58,8 @@ export function Login(){
         <div className="login">
             <img src={Fondo} alt="Fondo" className="fondo" />
             <img src={Astrazeneca} alt="Logo Astrazeneca" className="imagen"/>
-            <h2>Welcome</h2>
-            <h3>Login to our service status application</h3>
+            <h2 className="greater">Welcome</h2>
+            <h3 className="great">Login to our service status application</h3>
             <div className="input mail">
             <BiUser className="icono"/>
             <input type="email" name="email" autoComplete="off" id="email" className="in" placeholder={placeholderMail} onFocus={handleFocusMail} onBlur={handleBlurMail} onChange={handleEmail}/>

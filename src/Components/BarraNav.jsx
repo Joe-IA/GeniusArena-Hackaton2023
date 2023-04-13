@@ -8,40 +8,44 @@ import { HiCheckCircle } from "react-icons/hi2";
 
 export function BarraNav(){
 
-    const [active, setActive ] = useState('home');
-
-
     return (
         <div className="BarraNav">
             <div className="logo">
                 <img src={logo} alt="Logo Astrazeneca" className="logoImg"/>
             </div>
             <ul className="menu">
-                <li className={`element ${active === 'home' ? 'active' : 'unactive'}`} id='home' onClick={() => setActive("home")}>
+            <a href="/">
+                <li className={`element ${window.location.pathname === '/'? 'active' : 'unactive'}`} id='home'>
                     <div className="elementC">
                         Home
                         <ImHome3 className="icon home"/>
                     </div>
-                    
                 </li>
-                <li className={`element ${active === 'dashboard' ? 'active' : 'unactive'}`} id="dashboard" onClick={() => setActive("dashboard")}>
+                </a>
+                <a href='/dashboard'>
+                <li className={`element ${window.location.pathname === '/dashboard'? 'active' : 'unactive'}`} id="dashboard">
                     <div className="elementC">
                         Dashboard
                     <HiCheckCircle className="icon dashboard"/>
                     </div>
                 </li>
-                <li className={`element ${active === 'logs' ? 'active' : 'unactive'}`} id="logs" onClick={() => setActive("logs")}>
+                </a>
+                <a href="/history">
+                <li className={`element ${window.location.pathname === '/history'? 'active' : 'unactive'}`} id="logs">
                 <div className="elementC">
                         Logs
                     <VscGraphLine className="icon logs"/>
                     </div>
                 </li>
-                <li className={`element ${active === 'settings' ? 'active' : 'unactive'}`} id="settings" onClick={() => setActive("settings")}>
+                </a>
+                <a href="/settings">
+                <li className={`element ${window.location.pathname === '/settings'? 'active' : 'unactive'}`} id="settings">
                 <div className="elementC">
                         Settings
                     <VscSettingsGear className="icon settings"/>
                     </div>
                 </li>
+                </a>
 
             </ul>
         </div>

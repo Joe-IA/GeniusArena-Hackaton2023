@@ -13,7 +13,7 @@
 }
 
 .updated {
-    font-size: 20px;
+    font-size: 19px;
     margin-left: 50px;
     margin-top: 5px;
     color: #A0A4A4;
@@ -42,4 +42,9 @@
     height: 20px;
     width: 20px;
     cursor: pointer;
+    color:#404444;  
+}
+
+.a{
+    text-decoration: none;
 }
