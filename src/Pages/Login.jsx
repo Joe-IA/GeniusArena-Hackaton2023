@@ -69,7 +69,7 @@ export function Login(){
             <input type="password" name="password" autoComplete="off" id="password"  className="in" placeholder={placeholderPass} onFocus={handleFocusPass} onBlur={handleBlurPass} onChange={handleContrasena}/>
             </div>
             <button className="button" onClick={handleLog}>Login</button>
-            <p> Forgot password?</p>
+            <p className="forgot"> Forgot password?</p>
             <img src={LoginImg} alt="Chava" className="loginImg"/>
         </div>
     );

@@ -1,0 +1,50 @@
+.Category{
+    border: 1.44892px solid #C2C2C2;
+    border-radius: 7.27477px;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.catIcon{
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.etiqueta{
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.catStatus{
+    width: 40px;
+    height: 40px;
+    color: 	#228B22;
+    margin-left: 33px;
+}
+
+.Finances{
+    margin-left: 119px;
+}
+
+.Development{
+    margin-left: 84px;
+
+}
+
+.Research{
+    margin-left: 114px;
+}
+.status{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.6551px;
+    color: #837D7D;
+    margin-top: 51px;
+    margin-left: -238px;
+    
+}
